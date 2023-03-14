@@ -1,0 +1,11 @@
+ALGORITHM sortingCards
+VAR
+    cardsDeck : ARRAY_OF INTEGER;
+BEGIN
+    FOR i FROM 0 TO cardsDeck.length -1 STEP 1  DO
+        IF (cards[i] < cards[i+1]) THEN
+            [cards[i], cards[i+1]] = [cards[i+1], cards[i]];
+        END_IF
+    END_FOR
+    
+END
